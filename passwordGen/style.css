@@ -1,217 +1,3 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-body{
-    max-width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right bottom, #ffa585, #45c5d8);
-    color: #fff;
-    font-weight: 600;
-}
-
-.container{
-    border: 0.5px solid #fff;
-    border-radius: 10px;
-    padding: 28px 32px;
-    display: flex;
-    flex-direction: column;
-    background: transparent;
-    box-shadow: 8px 8px 4px #909090, 8px 8px 0px #575757;
-}
-
-.container h1{
-    font-size: 1.4rem;
-    margin-block: 8px;
-}
-.inputBox{
-    position: relative;
-}
-
-.inputBox span{
-    position: absolute;
-    top: 16px;
-    right: 6px;
-    color: #000;
-    font-size: 28px;
-    cursor: pointer;
-    z-index: 2;
-}
-.passBox{
-    background-color: #fff;
-    border: none;
-    outline: none;
-    padding: 10px;
-    width: 300px;
-    border-radius: 4px;
-    font-size: 20px;
-    margin-block: 8px;
-    text-overflow: ellipsis;
-}
-
-.row{
-    display: flex;
-    margin-block: 8px;
-}
-
-.row p, .row label{
-    flex-basis: 100%;
-    font-size: 18px;
-}
-
-.row input[type="checkbox"]{
-    width: 20px;
-    height: 20px;
-}
-
-.genBtn{
-    border: none;
-    outline: none;
-    background-color: #2c619e;
-    padding: 12px 24px;
-    color: #fff;
-    font-size: 18px;
-    margin-block: 8px;
-    font-weight: 700;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.genBtn:hover{
-    background-color: #0066ff;
-} */
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-body {
-    max-width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right bottom, #ff8c42, #fcb045);
-    color: #fff;
-    font-weight: 600;
-    overflow: hidden; /* Prevents overflow from the balls */
-}
-
-.container {
-    position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    padding: 28px 32px;
-    display: flex;
-    flex-direction: column;
-    background: rgba(255, 255, 255, 0.1); /* Transparent background */
-    backdrop-filter: blur(10px); /* Frosted glass effect */
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    z-index: 1; /* Keeps container above background balls */
-}
-
-/* Background balls */
-/* body::before,
-body::after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.3;
-    z-index: 0;
-}
-
-body::before {
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, #ff7b54, #ff6b35);
-    top: -150px;
-    left: -150px;
-}
-
-body::after {
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, #fcb045, #fd1d1d);
-    bottom: -100px;
-    right: -100px;
-}
-
-.container h1 {
-    font-size: 1.4rem;
-    margin-block: 8px;
-}
-
-.inputBox {
-    position: relative;
-}
-
-.inputBox span {
-    position: absolute;
-    top: 16px;
-    right: 6px;
-    color: #000;
-    font-size: 28px;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.passBox {
-    background-color: rgba(255, 255, 255, 0.3); 
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    outline: none;
-    padding: 10px;
-    width: 300px;
-    border-radius: 4px;
-    font-size: 20px;
-    margin-block: 8px;
-    text-overflow: ellipsis;
-    color: #000;
-}
-
-.row {
-    display: flex;
-    margin-block: 8px;
-}
-
-.row p, .row label {
-    flex-basis: 100%;
-    font-size: 18px;
-}
-
-.row input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-}
-
-.genBtn {
-    border: none;
-    outline: none;
-    background-color: rgba(255, 120, 70, 0.8);
-    padding: 12px 24px;
-    color: #fff;
-    font-size: 18px;
-    margin-block: 8px;
-    font-weight: 700;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.genBtn:hover {
-    background-color: rgba(255, 100, 50, 0.8);
-} */
-
-/* Import modern font
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 * {
@@ -254,6 +40,7 @@ body::after {
     border-radius: 50%;
     opacity: 0.3;
     z-index: 0;
+    animation: float 10s ease-in-out infinite; 
 }
 
 body::before {
@@ -262,6 +49,7 @@ body::before {
     background: radial-gradient(circle, #ff7b54, #ff6b35);
     top: -150px;
     left: -150px;
+    animation-duration: 12s; 
 }
 
 body::after {
@@ -272,8 +60,21 @@ body::after {
     right: -100px;
 }
 
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(-20px) translateX(10px);
+    }
+}
+
 .container h1 {
     font-size: 1.4rem;
+    margin-block: 8px;
+    color: #ff5733;
+}
+.container p {
     margin-block: 8px;
     color: #ff5733;
 }
@@ -322,7 +123,7 @@ body::after {
     width: 20px;
     height: 20px;
     background-color: rgba(255, 100, 50, 0.8); 
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 2.5px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     cursor: pointer;
     position: relative;
@@ -363,107 +164,22 @@ body::after {
 
 .genBtn:hover {
     background-color: rgba(255, 100, 50, 0.8);
-    transform: scale(1.05);
-} */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Modern font */
-}
-
-body {
-    max-width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right bottom, #ff8c42, #fcb045);
-    color: #fff;
-    font-weight: 600;
-    overflow: hidden; /* Prevents overflow from the balls */
-}
-
-.container {
-    position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    padding: 28px 32px;
-    display: flex;
-    flex-direction: column;
-    background: rgba(255, 255, 255, 0.1); /* Transparent background */
-    backdrop-filter: blur(10px); /* Frosted glass effect */
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow for pop-out effect */
-    z-index: 1; /* Keeps container above background balls */
-}
-
-/* Background balls with animation */
-body::before,
-body::after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.3;
-    z-index: 0;
-    animation: float 10s ease-in-out infinite; /* Add float animation */
-}
-
-body::before {
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, #ff7b54, #ff6b35);
-    top: -150px;
-    left: -150px;
-    animation-duration: 12s; /* Slightly different timing for variation */
-}
-
-body::after {
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, #fcb045, #fd1d1d);
-    bottom: -100px;
-    right: -100px;
-}
-
-/* Floating animation */
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0) translateX(0);
-    }
-    50% {
-        transform: translateY(-20px) translateX(10px);
-    }
-}
-
-.container h1 {
-    font-size: 1.4rem;
-    margin-block: 8px;
-    color: #ff5733;
+    transform: scale(1.05); 
 }
 
 .inputBox {
     position: relative;
-}
-
-.inputBox span {
-    position: absolute;
-    top: 16px;
-    right: 6px;
-    color: #000;
-    font-size: 28px;
-    cursor: pointer;
-    z-index: 2;
+    display: flex;
+    align-items: center; 
+    gap: 8px; 
 }
 
 .passBox {
-    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent input */
+    background-color: rgba(255, 255, 255, 0.3); 
     border: 1px solid rgba(255, 255, 255, 0.2);
     outline: none;
     padding: 10px;
-    width: 300px;
+    flex: 1; 
     border-radius: 4px;
     font-size: 20px;
     margin-block: 8px;
@@ -471,36 +187,40 @@ body::after {
     color: #000;
 }
 
-.row {
-    display: flex;
-    align-items: center;
-    margin-block: 8px;
+.inputBox .checkIcon {
+    font-size: 24px;
+    color: #28a745; 
+    display: none; 
 }
 
-.row p, .row label {
-    flex-basis: 100%;
-    font-size: 18px;
+.passBox.valid + .checkIcon {
+    display: block; 
 }
 
-/* Custom styled checkbox */
-.row input[type="checkbox"] {
+
+
+
+
+
+.checkbox {
     -webkit-appearance: none;
     appearance: none;
     width: 20px;
     height: 20px;
-    background-color: rgba(255, 100, 50, 0.8); /* Warm theme color */
+    background-color: rgba(255, 100, 50, 0.8); 
     border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
+    border-radius: 3px;
     cursor: pointer;
     position: relative;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.row input[type="checkbox"]:checked {
-    background-color: rgba(252, 176, 69, 0.9);
+.checkbox:checked {
+    background-color: rgba(252, 176, 69, 0.9); 
+    box-shadow: 0 0 5px 2px rgba(252, 176, 69, 0.8); 
 }
 
-.row input[type="checkbox"]::before {
+.checkbox::before {
     content: '✔';
     font-size: 14px;
     color: #fff;
@@ -510,25 +230,7 @@ body::after {
     visibility: hidden;
 }
 
-.row input[type="checkbox"]:checked::before {
+.checkbox:checked::before {
     visibility: visible;
 }
 
-.genBtn {
-    border: none;
-    outline: none;
-    background-color: rgba(255, 120, 70, 0.8); /* Translucent button */
-    padding: 12px 24px;
-    color: #fff;
-    font-size: 18px;
-    margin-block: 8px;
-    font-weight: 700;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.genBtn:hover {
-    background-color: rgba(255, 100, 50, 0.8);
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}

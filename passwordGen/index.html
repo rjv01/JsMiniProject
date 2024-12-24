@@ -10,12 +10,19 @@
       rel="stylesheet"
     />
 
-    <title>Password Generator | JavaScript Project</title>
+    <title>Password Generator</title>
   </head>
   <body>
     <div class="container">
       <h1>Password Generator</h1>
 
+      <p class="para">Generate Password using your name</p>
+      <div class="namebox">
+        <input type="text" class="passBox" id="namePassBox" placeholder="Name" disabled />
+        <input type="checkbox" class="checkbox" name="namePassBox" id="namecheck">
+      </div>
+
+      <p>Or use Random password</p>
       <div class="inputBox">
         <input type="text" class="passBox" id="passBox" disabled />
         <span class="material-icons" id="copyIcon">content_copy</span>
@@ -53,6 +60,6 @@
       </button>
     </div>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
