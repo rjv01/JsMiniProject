@@ -1,0 +1,63 @@
+
+/* Aesthetic Background Color */
+body {
+    background-image: linear-gradient(to bottom right, #f07109, #e5d306);
+
+  }
+  
+  /* Center the button */
+  #btn {
+    display: block;
+    margin: 20px auto; /* Center horizontally */
+    padding: 10px 20px;
+    background-color: #fd7600; /* Green */
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #btn:hover{
+    cursor: pointer;
+  }
+/* Style the container for the Pokémon cards */
+.poke-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  /* Style the individual Pokémon cards */
+  .poke-card {
+    /* background-image: linear-gradient(to bottom right, #519e53, #8bc34a);  */
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 18%; /* Adjust width for 4 cards per row */
+    box-sizing: border-box;
+    color: white;
+  }
+
+  
+  /* Style the Pokémon image */
+  .poke-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Style the Pokémon name */
+  .poke-card h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+  }
+  
+  /* Style the Pokémon type */
+  .poke-card h3 {
+    font-size: 18px;
+    margin: 0;
+  }
