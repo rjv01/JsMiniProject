@@ -30,3 +30,5 @@ async function fetchData() {
 }
 
 newsBtn.addEventListener("click", fetchData);
+
+
