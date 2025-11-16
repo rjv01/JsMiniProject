@@ -1,0 +1,104 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #1f1f26; 
+    font-family: "Poppins", sans-serif;
+    color: #f5f5f5;
+}
+
+.main-title, .list_title {
+    text-align: center;
+    margin: 25px 0;
+    color: #c3bff7; 
+}
+
+.outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputArea {
+    display: flex;
+    gap: 30px;
+    background-color: #2a2a33;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 14px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    border: 1px solid #3b3b47;
+}
+
+.listName, .dateArea, .addBtn {
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #4d4d5b;
+    background-color: #3b3b47;
+    color: #f5f5f5;
+}
+
+.listName::placeholder {
+    color: #b8b8c7;
+}
+
+.addBtn {
+    background-color: #8ecae6; 
+    color: #1f1f26;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.addBtn:hover {
+    background-color: #72b6d8;
+    color: #fff;
+}
+
+.list-title {
+    margin-top: 25px;
+    color: #bbd0ff; 
+}
+
+.deleteBtn {
+    padding: 12px;
+    background-color: #ffb5a7; 
+    color: #1f1f26;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.deleteBtn:hover {
+    background-color: #ff8f87;
+}
+
+.todoListArea {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 90%;
+    margin: auto;
+}
+
+.singleData {
+    background-color: #2d2d38;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #8ecae6;
+    font-style: italic;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
