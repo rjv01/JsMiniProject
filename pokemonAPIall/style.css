@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0cf7397994e5cb43cd147bd43e0f294877f91e2c
 body {
   background-image: linear-gradient(to bottom right, #f07109, #e5d306);
   background-repeat: no-repeat;
@@ -8,7 +11,11 @@ body {
   margin: 0;
 }
 
+<<<<<<< HEAD
   #btn {
+=======
+#btn {
+>>>>>>> 0cf7397994e5cb43cd147bd43e0f294877f91e2c
     display: block;
     margin: 20px auto; 
     padding: 10px 20px;
@@ -18,20 +25,30 @@ body {
     font-size: 20px;
     border-radius: 5px;
     cursor: pointer;
-  }
-  #btn:hover{
+}
+#btn:hover{
     cursor: pointer;
     background-color: #f38220;
+<<<<<<< HEAD
   }
+=======
+}
+>>>>>>> 0cf7397994e5cb43cd147bd43e0f294877f91e2c
 .poke-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
     width: 80%;
+<<<<<<< HEAD
   }
   
   .poke-card {
+=======
+}
+
+.poke-card {
+>>>>>>> 0cf7397994e5cb43cd147bd43e0f294877f91e2c
     border: 1px solid #ccc;
     border-radius: 50px;
     margin: 10px;
@@ -40,6 +57,7 @@ body {
     width: 18%; 
     box-sizing: border-box;
     color: white;
+<<<<<<< HEAD
   }
   .poke-card img {
     width: 100%;
@@ -53,6 +71,21 @@ body {
   }
   
   .poke-card h3 {
+=======
+}
+.poke-card img {
+    width: 100%;
+    height: auto;
+}
+
+.poke-card h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.poke-card h3 {
+>>>>>>> 0cf7397994e5cb43cd147bd43e0f294877f91e2c
     font-size: 18px;
     margin: 0;
-  }
+}
